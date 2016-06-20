@@ -47,6 +47,8 @@
         <ul>
           <li class="tab" data-content="articles"><a href="/" class="icon-home"> Home</a></li>
           <li class="tab" data-content="about"><a href="/about" class="icon-address-book"> About</a></li>
+          <li class="tab" data-content="blog-stats"><a href="/stats" class="icon-rocket"> Stats</a></li>
+          <li class="tab"><a href="new.html" class="icon-happy"> New Article</a></li>
           <li><a href="http://twitter.com/codefellowsSEA" target="_blank" class="icon-twitter3"> Twitter</a></li>
           <li><a href="http://github.com/" target="_blank" class="icon-github"> GitHub</a></li>
         </ul>
@@ -84,16 +86,16 @@
             <li>Sharing what I've learned</li>
             <li>Hanging with my family</li>
           </ul>
-        </section>
+        </section>    
+      </section>
+      <section id="blog-stats" class="tab-content">
         <h1>Blog Stats</h1>
-        <section id="blog-stats" class="tab-content">
-          <dt>Total articles:</dt> <dd class="articles"></dd>
-          <dt>Total words:</dt> <dd class="words"></dd>
-          <h2>Author Stats</h2>
-          <p><em>Details on who is writing, and how much writing they are doing...</em></p>
-          <ul class="author-stats">
-          </ul>
-        </section>
+        <dt>Total articles:</dt> <dd class="articles"></dd>
+        <dt>Total words:</dt> <dd class="words"></dd>
+        <h2>Author Stats</h2>
+        <p><em>Details on who is writing, and how much writing they are doing...</em></p>
+        <ul class="author-stats">
+        </ul>
       </section>
     </main>
     <footer>
@@ -112,10 +114,13 @@
     <script src="/scripts/models/article.js"></script>
     <!-- View Files -->
     <script src="/scripts/views/articleView.js"></script>
+    <script src="/scripts/views/adminView.js"></script>
     <!-- TODO: place here our Controller Files -->
     <!-- Controller Files -->
     <script src="/scripts/controllers/articleController.js"></script>
     <script src="/scripts/controllers/aboutController.js"></script>
+
+    <script src="/scripts/controllers/statsController.js"></script>
     <script src="/scripts/controllers/routes.js"></script>
   </body>
 </html>
