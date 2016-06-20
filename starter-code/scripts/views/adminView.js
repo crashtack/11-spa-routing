@@ -6,4 +6,3 @@ articleView.initAdminPage = function() {
   $('#blog-stats .articles').text(Article.allArticles.length);
   $('#blog-stats .words').text(Article.numWordsAll());
 };
-Article.fetchAll(articleView.initAdminPage);
