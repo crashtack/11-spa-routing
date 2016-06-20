@@ -30,6 +30,9 @@
     <script id="category-filter-template" type="text/x-handlebars-template">
       <option value="{{category}}">{{category}}</option>
     </script>
+    <script id="author-template" type="text/x-handlebars-template">
+      <li><strong>{{name}}</strong>: {{numWords}} words written</li>
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
@@ -80,6 +83,15 @@
             <li>Coding</li>
             <li>Sharing what I've learned</li>
             <li>Hanging with my family</li>
+          </ul>
+        </section>
+        <h1>Blog Stats</h1>
+        <section id="blog-stats" class="tab-content">
+          <dt>Total articles:</dt> <dd class="articles"></dd>
+          <dt>Total words:</dt> <dd class="words"></dd>
+          <h2>Author Stats</h2>
+          <p><em>Details on who is writing, and how much writing they are doing...</em></p>
+          <ul class="author-stats">
           </ul>
         </section>
       </section>
